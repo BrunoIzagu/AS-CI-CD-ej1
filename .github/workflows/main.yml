@@ -1,0 +1,13 @@
+name: Primer workflow
+
+on: push
+  jobs:
+    hola_mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar codigo
+        run: actions/checkout@v5
+      - name: Ejecutar codigo pip
+        run: pip installl pytest
+      - name: Ejecutar codigo test
+        run: pytest test.py
