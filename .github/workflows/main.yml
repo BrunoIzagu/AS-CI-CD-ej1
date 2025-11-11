@@ -8,6 +8,6 @@ jobs:
           - name: Bajar codigo
             uses: actions/checkout@v5
           - name: Ejecutar codigo pip
-            run: pip installl pytest
+            run: pip install pytest
           - name: Ejecutar codigo test
             run: pytest test.py
